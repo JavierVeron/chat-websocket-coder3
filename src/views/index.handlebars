@@ -1,0 +1,28 @@
+<div class="container-fluid bg-dark py-3">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center text-white fw-bold">CHAT CODERHOUSE</h1>
+        </div>
+    </div>
+</div>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <input type="text" class="form-control" id="mensaje">
+                    <input type="hidden" class="form-control" id="usuario">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="enviarMensaje()">Enviar</button>
+            </form>
+        </div>
+        <div id="messageLogs" class="col-md-6">
+            <h1 class="text-center">No hay mensajes!</h1>
+        </div>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/index.js"></script>
